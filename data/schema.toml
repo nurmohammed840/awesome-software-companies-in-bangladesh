@@ -1,0 +1,191 @@
+# this list are not exhaustive. Please open a pull request to add missing type, language, technology.
+
+Company-Type = [
+  "E-Commerce",
+  "SaaS",
+  "Game Development",
+  "Crypto",
+  "Security",
+  "AI",
+]
+
+[Technology]
+# General foundationsF
+AI = []
+Blockchain = []
+CloudComputing = []
+Containers = []
+DevOps = []
+NoSQL = []
+SQA = []
+SQL = []
+TestAutomation = "SQA"
+XR = []
+AR = "XR"
+MixedReality = "XR"
+
+# Languages and core web technologies
+C = []
+"C#" = []
+"C++" = "C"
+CSS = []
+Dart = []
+"F#" = []
+Go = []
+Java = []
+JavaScript = []
+Kotlin = []
+Objective-C = []
+PHP = []
+Python = []
+Ruby = []
+Rust = []
+Scala = []
+Solidity = "Blockchain"
+Swift = []
+TypeScript = "JavaScript"
+
+# AI and data tooling
+ML = "AI"
+DeepLearning = "ML"
+LLM = "DeepLearning"
+TensorFlow = "ML"
+PyTorch = "ML"
+OpenCV = []
+Streamlit = "Python"
+
+# Cloud and infrastructure
+AWS = "CloudComputing"
+Azure = "CloudComputing"
+GCP = "CloudComputing"
+Firebase = "GCP"
+Figma = []
+GoogleNLP = ["GCP", "AI"]
+Lambda = "AWS"
+SNS = "AWS"
+SQS = "AWS"
+Docker = "Containers"
+Kubernetes = "Containers"
+Jenkins = "DevOps"
+GitHub = []
+Linux = []
+Windows = []
+ApacheHTTPServer = []
+Nginx = []
+
+# Web foundations and front-end
+Bootstrap = "CSS"
+Less = "CSS"
+SCSS = "CSS"
+TailwindCSS = "CSS"
+jQuery = "JavaScript"
+AngularJS = "JavaScript"
+React = "JavaScript"
+VueJS = "JavaScript"
+Redux = "JavaScript"
+Angular = "TypeScript"
+NextJS = "React"
+Gatsby = "React"
+Nuxt = "VueJS"
+Vuex = "VueJS"
+
+# Node.js ecosystem
+NodeJS = "JavaScript"
+ExpressJS = "NodeJS"
+HapiJS = "NodeJS"
+Electron = "NodeJS"
+NestJS = ["NodeJS", "TypeScript"]
+Mongoose = ["NodeJS", "MongoDB"]
+
+# Mobile and cross-platform
+Android = []
+iOS = []
+Tizen = []
+Flutter = "Dart"
+ReactNative = "React"
+Ionic = "JavaScript"
+Unity = "C#"
+UnrealEngine = "C++"
+
+# Java ecosystem
+JavaEE = "Java"
+JavaFX = "Java"
+JPA = "Java"
+JMS = "JavaEE"
+Servlet = "JavaEE"
+JSP = "JavaEE"
+JSTL = "JSP"
+Hibernate = "JPA"
+Spring = "Java"
+SpringBoot = "Spring"
+SpringDataJPA = ["Spring", "JPA"]
+JUnit = ["Java", "TestAutomation"]
+Mockito = ["Java", "TestAutomation"]
+Tomcat = "Java"
+AEM = "Java"
+
+# .NET ecosystem
+".NET" = []
+".NET Core" = ".NET"
+".NET Framework" = ".NET"
+"ASP.NET" = ".NET"
+"ASP.NET Core" = ".NET Core"
+"ASP.NET MVC" = "ASP.NET"
+MicrosoftOrleans = ".NET"
+Sitecore = ".NET"
+UWP = ".NET"
+WPF = ".NET"
+Xamarin = ".NET"
+nopCommerce = "ASP.NET Core"
+MFC = "C++"
+
+# Python ecosystem
+Celery = "Python"
+Django = "Python"
+FastAPI = "Python"
+Flask = "Python"
+Gunicorn = "Python"
+Odoo = "Python"
+SQLAlchemy = ["Python", "SQL"]
+
+# PHP and CMS ecosystem
+CakePHP = "PHP"
+CodeIgniter = "PHP"
+Laravel = "PHP"
+Symfony = "PHP"
+Zend = "PHP"
+WordPress = "PHP"
+Drupal = "PHP"
+Joomla = "PHP"
+Magento = "PHP"
+JoomShaper = "Joomla"
+Themeum = "WordPress"
+Shopify = []
+
+# Ruby ecosystem
+Rails = "Ruby"
+
+# Databases and search
+ClickHouse = "SQL"
+MariaDB = "SQL"
+MicrosoftSQLServer = "SQL"
+MySQL = "SQL"
+OracleDB = "SQL"
+PostgreSQL = "SQL"
+MongoDB = "NoSQL"
+Redis = "NoSQL"
+Elasticsearch = "NoSQL"
+
+# APIs, messaging, maps, and platforms
+GraphQL = []
+Kafka = []
+MQTT = []
+RabbitMQ = []
+ArcGIS = []
+GoogleMaps = []
+MetaSpark = "AR"
+
+# Testing and automation
+Cypress = ["JavaScript", "TestAutomation"]
+Selenium = "TestAutomation"
+Testsigma = "TestAutomation"
