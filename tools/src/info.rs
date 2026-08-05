@@ -1,6 +1,6 @@
 use scraper::*;
 use serde_json as json;
-use std::{collections::BTreeMap, path::PathBuf, thread};
+use std::{collections::BTreeMap, path::Path, thread};
 
 use crate::{
     Result,
@@ -23,7 +23,7 @@ fn fetch_info_from(company: &Company) -> Result<Vec<json::Value>> {
     Ok(values)
 }
 
-pub fn fetch_info(companies: &Companies<'_>, dir: &PathBuf) -> Result {
+pub fn fetch_info(companies: &Companies<'_>, dir: &Path) -> Result {
     let batch: Vec<_> = companies.iter().collect();
 
     let mut output = BTreeMap::new();

@@ -1,6 +1,6 @@
 use std::{
     collections::BTreeMap,
-    path::PathBuf,
+    path::{Path, PathBuf},
     process::{Command, Stdio},
 };
 
@@ -20,8 +20,8 @@ pub struct Subtrees {
 }
 
 impl Subtrees {
-    fn parse(path: &PathBuf) -> Result<Self> {
-        let file = TextFile::read(path.clone())?;
+    fn parse(path: &Path) -> Result<Self> {
+        let file = TextFile::read(path.into())?;
         let tree = toml::from_str(&file.text)?;
         Ok(Self { tree })
     }

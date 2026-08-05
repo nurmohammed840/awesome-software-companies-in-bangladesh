@@ -1,9 +1,9 @@
-pub mod text_file;
 pub mod fetch;
-pub mod zlib;
-pub mod logger;
 pub mod keyword_hinter;
 pub mod levenshtein_distance;
+pub mod logger;
+pub mod text_file;
+pub mod zlib;
 
 use url::Url;
 

@@ -1,18 +1,18 @@
 use crate::{
-    PathBuf, Result,
+    Result,
     data::{Companies, CompanyData, Schema},
     repos::tech_companies_in_bangladesh::{self, Link, normalize_tag},
 };
 use std::{
     collections::{BTreeMap as Map, BTreeSet as Set},
     fs,
+    path::Path,
 };
 
-pub fn repos(schema: &Schema, companies: &mut Companies<'_>, dir: &PathBuf) -> Result {
+pub fn repos(schema: &Schema, companies: &mut Companies<'_>, dir: &Path) -> Result {
     let technologies: Map<_, _> = schema
         .technologies
-        .iter()
-        .map(|(tag, _)| tag)
+        .keys()
         .map(|s| (s.to_lowercase(), s))
         .collect();
 

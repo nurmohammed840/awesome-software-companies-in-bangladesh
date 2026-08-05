@@ -1,4 +1,4 @@
-mod find_jobs;
+mod info;
 mod update;
 
 mod data;
@@ -8,7 +8,7 @@ mod utils;
 
 use crate::{
     data::{Companies, Schema},
-    find_jobs::fetch_info,
+    info::fetch_info,
     repos::subtree,
     utils::{fetch, logger::Logger, text_file::TextFile},
 };
@@ -31,14 +31,14 @@ struct Cli {
     #[arg(long)]
     backup: bool,
 
-    /// Pull updates
+    /// Pull updates from upstream repos
     #[arg(long)]
     pull: bool,
 
     #[arg(long)]
     update: bool,
 
-    /// Format the project
+    /// Format data
     #[arg(long)]
     fmt: bool,
 
@@ -51,7 +51,7 @@ struct Cli {
 
 #[derive(Subcommand, Debug)]
 enum Command {
-    /// Fetch websites and extract data.
+    /// Fetch websites and extract `schema.org` data.
     Fetch {
         /// Re-fetch even if cached.
         #[arg(long)]
@@ -110,21 +110,18 @@ fn cli() -> Result {
         update = true;
     }
 
-    match command {
-        Some(Command::Fetch { force }) => {
-            if force {
-                info!("Clearing cache...");
-                fetch::clear_cache_dir()?;
-            }
-            fetch_info(&companies, &dir)?;
-        }
-        _ => {}
-    }
-
     if update {
         update::repos(&schema, &mut companies, &dir)?;
         fmt = true;
         docs = true;
+    }
+
+    if let Some(Command::Fetch { force }) = command {
+        if force {
+            info!("Clearing cache...");
+            fetch::clear_cache_dir()?;
+        }
+        fetch_info(&companies, &dir)?;
     }
 
     if fmt {

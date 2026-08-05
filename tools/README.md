@@ -6,8 +6,8 @@ A command-line tool for validating, formatting, and maintaining this repository.
 
 Configure `rust-analyzer` to use it from repository root dir. 
 
-```json
-# .vscode/settings.json
+```jsonc
+// .vscode/settings.json
 {
     "rust-analyzer.linkedProjects": [
         "tools/Cargo.toml"
@@ -19,5 +19,6 @@ Configure `rust-analyzer` to use it from repository root dir.
 
 ```sh
 cd tools
+cargo run -- --help
 cargo run -- ../ --fmt
 ```

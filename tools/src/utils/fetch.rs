@@ -33,7 +33,10 @@ pub fn fetch(url: &str) -> Result<String> {
 pub fn normalize_url(url: &str) -> Result<Url> {
     let mut url = Url::parse(url)?;
     url.set_fragment(None);
-    url.set_path(&url.path().trim_end_matches('/').to_owned());
+
+    let path = url.path().trim_end_matches('/').to_string();
+    url.set_path(&path);
+
     Ok(url)
 }
 

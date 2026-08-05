@@ -9,8 +9,8 @@ impl<'a> From<&'a Schema> for HintDex<'a> {
         Self {
             keyword_map: schema
                 .technologies
-                .iter()
-                .map(|(keyword, _)| (keyword.as_str(), normalize(keyword)))
+                .keys()
+                .map(|keyword| (keyword.as_str(), normalize(keyword)))
                 .collect(),
         }
     }

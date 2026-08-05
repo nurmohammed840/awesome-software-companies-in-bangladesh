@@ -179,7 +179,7 @@ pub fn parse(txt: &str) -> impl Iterator<Item = Company<'_>> {
 
 pub fn normalize_tag(tag: &str) -> Option<String> {
     let normalized = tag
-        .split(|c| matches!(c, '/' | '(' | '-' | ')'))
+        .split(['/', '(', '-', ')'])
         .next()
         .unwrap()
         .replace(['.', ' '], "")
