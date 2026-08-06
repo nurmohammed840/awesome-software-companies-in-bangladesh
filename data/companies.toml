@@ -15,7 +15,7 @@ type = []
 website = "https://6sensehq.com/"
 job = "https://www.6sensehq.com/career"
 
-["ATI Limited"]
+["ATI Ltd."]
 tech = ["AWS", "Android", "C#", "Docker", "Flutter", "JavaFX", "PHP", "React", "SpringBoot", "VueJS"]
 type = []
 website = "https://atilimited.net/"
@@ -28,12 +28,12 @@ tech = ["React", "WordPress"]
 type = []
 website = "http://vumobile.biz/"
 
-["Adventure Dhaka Limited"]
+["Adventure Dhaka Ltd."]
 tech = ["DevOps", "Flutter", "Go", "Java", "NextJS", "Swift"]
 type = []
 website = "https://adventurekk.com/company/about/"
 
-["Alchemy Software Limited"]
+["Alchemy Software Ltd."]
 tech = [".NET", "Android", "Java", "Laravel", "WordPress"]
 type = []
 website = "https://alchemy-bd.com/"
@@ -114,7 +114,7 @@ type = []
 website = "https://www.augmedix.com/"
 job = "https://www.augmedix.com/careers"
 
-["Avenir IP Limited"]
+["Avenir IP Ltd."]
 tech = ["Android", "NodeJS", "PHP", "Swift"]
 type = []
 website = "https://aveniripltd.com/"
@@ -143,18 +143,18 @@ tech = ["Java", "Magento", "Python", "Ruby", "WordPress"]
 type = []
 website = "https://www.binate-solutions.com/"
 
-["Bit Mascot (Pvt.) Ltd."]
+["Bit Mascot Ltd."]
 tech = [".NET", "Python", "Spring", "TensorFlow", "WordPress", "jQuery"]
 type = []
 website = "https://www.bitmascot.com/"
 job = "https://www.bitmascot.com/careers/"
 
-["BlueBees Limited"]
+["BlueBees Ltd."]
 tech = [".NET", "AngularJS", "Flutter", "PHP", "VueJS"]
 type = []
 website = "https://bluebees.ventures/"
 
-["Bondstein Technologies Limited"]
+["Bondstein Technologies Ltd."]
 tech = ["Angular", "MySQL", "NodeJS", "PHP", "React"]
 type = []
 website = "https://bondstein.com/"
@@ -181,12 +181,12 @@ website = "http://www.brainstation-23.com/"
 linkedin = "https://www.linkedin.com/company/brain-station-23-plc/"
 job = "https://brainstation-23.easy.jobs/"
 
-["Braincraft Limited"]
+["Braincraft Ltd."]
 tech = ["Android", "AngularJS", "Go", "Java", "NodeJS"]
 type = []
 website = "https://www.braincraftapps.com/"
 
-["Brotecs Technologies Ltd (USA)"]
+["Brotecs Technologies Ltd. (USA)"]
 tech = [".NET", "Android", "C", "PHP", "iOS"]
 type = []
 website = "http://www.brotecs.com/"
@@ -237,7 +237,7 @@ tech = ["Android", "iOS"]
 type = []
 website = "http://www.codinism.com/"
 
-["Commlink Info Tech Limited"]
+["Commlink Info Tech Ltd."]
 tech = ["Spring"]
 type = []
 website = "https://www.commlinkinfotech.com/"
@@ -254,7 +254,7 @@ website = "https://www.craftsmenltd.com/"
 linkedin = "https://www.linkedin.com/organization-guest/company/craftsmenltd"
 facebook = "https://www.facebook.com/craftsmenltd/"
 
-["Daffodil Software Limited (DSL)"]
+["Daffodil Software Ltd. (DSL)"]
 tech = [".NET", "Android", "Java", "PHP", "iOS"]
 type = []
 website = "http://daffodilsoft.com/"
@@ -269,7 +269,7 @@ tech = ["Angular", "CodeIgniter", "GraphQL", "Laravel", "NodeJS", "VueJS"]
 type = ["E-commerce"]
 website = "https://careers.daraz.com/"
 
-["Data Grid Limited"]
+["Data Grid Ltd."]
 tech = [".NET", "Angular", "C#"]
 type = []
 website = "https://datagridltd.com/"
@@ -280,12 +280,12 @@ type = []
 website = "http://datasoft-bd.com/"
 job = "https://datasoft-bd.com/career"
 
-["Databiz Software Limited"]
+["Databiz Software Ltd."]
 tech = [".NET", "Android", "PHP", "iOS"]
 type = []
 website = "http://www.databizsoftware.com/"
 
-["Dcastalia Limited"]
+["Dcastalia Ltd."]
 tech = []
 type = []
 website = "https://dcastalia.com/"
@@ -301,12 +301,12 @@ tech = ["Firebase", "Flutter", "GoogleMaps", "Java", "NodeJS", "React"]
 type = []
 website = "https://www.dingi.tech/"
 
-["Divine IT Limited"]
+["Divine IT Ltd."]
 tech = ["Angular", "Django", "Flask", "NodeJS", "React", "SQLAlchemy", "VueJS"]
 type = []
 website = "https://www.divineit.net/"
 
-["Dizi Nova Limited"]
+["Dizi Nova Ltd."]
 tech = [".NET", "C#", "Flutter", "React"]
 type = []
 website = "http://www.dizinova.com/"
@@ -328,7 +328,7 @@ website = "http://www.dsinnovators.com/"
 linkedin = "https://www.linkedin.com/company/dsinnovators/"
 facebook = "https://www.facebook.com/DynamicSolutionInnovators/"
 
-["ERA-InfoTech Ltd"]
+["ERA-InfoTech Ltd."]
 tech = [".NET", "AI", "Java", "Python", "SQL"]
 type = []
 website = "https://www.erainfotechbd.com/"
@@ -350,7 +350,7 @@ tech = ["Java"]
 type = []
 website = "http://www.escenic.com/"
 
-["Evaly Limited"]
+["Evaly Ltd."]
 tech = ["Django", "ExpressJS", "Go", "MQTT", "NoSQL", "SNS", "SQL", "SQS"]
 type = []
 website = "https://evaly.com.bd/career/"
@@ -414,32 +414,32 @@ type = []
 website = "https://geekssort.com/"
 job = "https://geekssort.com/career-page/"
 
-["Genex Infosys Limited"]
+["Genex Infosys Ltd."]
 tech = []
 type = []
 website = "http://genexinfosys.com/"
 
-["Genuity Systems Ltd"]
+["Genuity Systems Ltd."]
 tech = []
 type = []
 website = "https://genusys.us/"
 
-["Giga Tech Limited"]
+["Giga Tech Ltd."]
 tech = [".NET", "Blockchain", "DeepLearning", "Django", "Java", "JavaScript"]
 type = []
 website = "https://gigatechltd.com/"
 
-["Golden Harvest InfoTech Ltd (GHIT)"]
+["Golden Harvest InfoTech Ltd. (GHIT)"]
 tech = ["AngularJS", "C#", "MySQL", "PHP", "Spring"]
 type = []
 website = "http://ghitbd.com/"
 
-["Grameen Solutions Ltd"]
+["Grameen Solutions Ltd."]
 tech = ["Java", "PHP"]
 type = []
 website = "https://www.grameensolutions.com/"
 
-["Grit Technologies Limited"]
+["Grit Technologies Ltd."]
 tech = ["AWS", "Cypress", "Docker", "Figma", "Go", "LLM", "MongoDB", "PHP", "PostgreSQL", "Python", "ReactNative", "XR"]
 type = []
 website = "https://www.grit0.com/"
@@ -465,12 +465,12 @@ tech = ["Spring"]
 type = []
 website = "http://www.ibcs-primax.com/ibcsonweb/"
 
-["IBOS Limited"]
+["IBOS Ltd."]
 tech = ["Java", "MySQL", "PHP", "React"]
 type = []
 website = "https://www.ibos.io/"
 
-["IMpulse (BD) Ltd"]
+["IMpulse (BD) Ltd."]
 tech = [".NET", "JavaScript", "PostgreSQL"]
 type = []
 website = "https://www.impulsebdltd.com/"
@@ -506,7 +506,7 @@ tech = ["Android", "Java", "Laravel", "NodeJS", "ReactNative", "VueJS", "iOS"]
 type = []
 website = "http://www.infancyit.com/"
 
-["Inflack Limited"]
+["Inflack Ltd."]
 tech = ["Django", "JavaScript", "Laravel", "NoSQL", "SNS", "SQL", "SQS", "Spring"]
 type = []
 website = "http://inflack.com/"
@@ -536,7 +536,7 @@ tech = ["C", "Java", "jQuery"]
 type = []
 website = "https://www.istlbd.com/"
 
-["Intellier Limited"]
+["Intellier Ltd."]
 tech = ["Spring"]
 type = []
 website = "https://intellier.com/"
@@ -547,7 +547,7 @@ type = []
 website = "https://inument.com/careers/#available-jobs"
 job = "https://inument.com/careers/#available-jobs"
 
-["Invento Software Limited"]
+["Invento Software Ltd."]
 tech = ["Django", "JavaScript", "WordPress"]
 type = []
 website = "http://invento.com.bd/"
@@ -564,12 +564,12 @@ tech = []
 type = []
 website = "http://www.israttstech.com/"
 
-["JB Connect Ltd.(Japan Bangladesh Connect Ltd.)"]
+["JB Connect Ltd."]
 tech = ["DevOps"]
 type = []
 website = "https://www.jbc-ltd.com/en"
 
-["Jatri Services Limited"]
+["Jatri Services Ltd."]
 tech = []
 type = ["E-logistics"]
 website = "https://www.jatri.co/"
@@ -596,7 +596,7 @@ type = []
 website = "https://www.kitegamesstudio.com/"
 linkedin = "https://www.linkedin.com/company/kite-games-studio/mycompany"
 
-["Kompass Technologies Limited"]
+["Kompass Technologies Ltd."]
 tech = []
 type = []
 website = "https://hellokompass.com/"
@@ -686,7 +686,7 @@ tech = ["Spring"]
 type = []
 website = "http://www.metafour.com/"
 
-["Metatude Asia Ltd"]
+["Metatude Asia Ltd."]
 tech = [".NET", "AWS", "Angular", "Java"]
 type = []
 website = "https://www.fellowdigitals.com/metatude"
@@ -711,7 +711,7 @@ tech = ["Android", "Django", "ML", "Magento", "React", "Ruby", "WordPress"]
 type = []
 website = "https://misfit.tech/"
 
-["MononSoft Ltd. (A Concern of JMI Group)"]
+["MononSoft Ltd."]
 tech = ["Laravel", "VueJS"]
 type = []
 website = "https://mononsoft.org/"
@@ -741,12 +741,12 @@ tech = ["Android", "C++", "Laravel", "NodeJS", "React", "SQL", "VueJS"]
 type = []
 website = "https://netcoden.com/"
 
-["Netizen IT Limited."]
+["Netizen IT Ltd."]
 tech = ["AWS", "Android", "Angular", "Kotlin", "MySQL", "PHP", "Python", "Ruby", "Spring"]
 type = []
 website = "https://www.netizenbd.com/"
 
-["New Technology Systems Limited"]
+["New Technology Systems Ltd."]
 tech = ["JavaScript", "MongoDB", "MySQL", "PHP"]
 type = []
 website = "https://ntsctgbd.com/"
@@ -756,7 +756,7 @@ tech = ["Hibernate", "JSTL", "MySQL", "Spring", "Tomcat"]
 type = []
 website = "https://newgen-bd.com/"
 
-["Newroz Technologies Limited"]
+["Newroz Technologies Ltd."]
 tech = ["Flutter", "Kotlin", "React", "SpringBoot"]
 type = []
 website = "https://www.newroztech.com/"
@@ -768,7 +768,7 @@ website = "https://nextventures.io/"
 linkedin = "https://www.linkedin.com/company/nextventuresofficial"
 job = "https://career.nextventures.io/"
 
-["Nextech Limited"]
+["Nextech Ltd."]
 tech = ["Laravel", "SQL", "VueJS"]
 type = []
 website = "https://nextech.com.bd/"
@@ -778,19 +778,19 @@ tech = ["MySQL", "PHP", "Spring", "jQuery"]
 type = []
 website = "https://www.nicegroupbd.com/"
 
-["Nogor Solutions Limited"]
+["Nogor Solutions Ltd."]
 tech = ["CakePHP", "Docker", "MongoDB", "MySQL", "Vuex"]
 type = []
 website = "https://www.nogorsolutions.com/"
 job = "https://nogorsolutions.com/career"
 
-["Nova Labs LTD"]
+["Nova Labs Ltd."]
 tech = ["AR", "Android", "Unity", "iOS"]
 type = []
 website = "https://novalabs.gg/"
 linkedin = "https://www.linkedin.com/company/novalabsgg"
 
-["Nybbles System Limited (NybSys)"]
+["Nybbles System Ltd."]
 tech = ["AngularJS", "C#", "Dart", "Java", "Kotlin", "Swift"]
 type = []
 website = "https://www.nybsys.com/"
@@ -809,7 +809,7 @@ website = "https://onecodesoft.com/"
 linkedin = "https://www.linkedin.com/company/onecodesoft"
 job = "https://onecodesoft.com/career"
 
-["Optimizely (formerly Newscred) (USA)"]
+["Optimizely (Newscred) (USA)"]
 tech = ["MongoDB", "NodeJS", "Python", "Scala"]
 type = []
 website = "https://www.optimizely.com/"
@@ -841,39 +841,39 @@ tech = ["AWS", "Android", "ExpressJS", "Flutter", "Gatsby", "MongoDB", "MySQL", 
 type = []
 website = "https://www.ottoint.com/"
 
-["Paperfly Ltd"]
+["Paperfly Ltd."]
 tech = ["Laravel", "React", "VueJS"]
 type = ["E-logistics"]
 website = "https://www.paperfly.com.bd/"
 
-["Pathao Ltd"]
+["Pathao Ltd."]
 tech = ["Android", "Go", "Kubernetes", "NodeJS", "PHP", "iOS"]
 type = ["E-logistics"]
 website = "https://pathao.com/"
 
-["Penta Global Ltd"]
+["Penta Global Ltd."]
 tech = ["Java", "Kubernetes", "NodeJS", "PostgreSQL", "Python", "React"]
 type = []
 website = "https://www.pentabd.com/"
 
-["PixelNet Technologies Ltd"]
+["PixelNet Technologies Ltd."]
 tech = ["Ionic", "Magento", "MongoDB", "MySQL", "NodeJS", "Rails"]
 type = []
 website = "http://www.pixelnettech.com/"
 
-["Portonics Limited"]
+["Portonics Ltd."]
 tech = ["AWS", "Android", "Docker", "MySQL", "NodeJS", "PHP", "PostgreSQL", "Python", "React", "iOS"]
 type = []
 website = "http://portonics.com/"
 job = "https://www.portonics.com/career"
 
-["Pridesys IT Limited"]
+["Pridesys IT Ltd."]
 tech = ["MySQL", "WordPress", "jQuery"]
 type = []
 website = "https://pridesys.com/"
 job = "https://pridesys.com/careers"
 
-["Progoti Systems Limited"]
+["Progoti Systems Ltd."]
 tech = ["Android", "Django", "Docker", "MySQL", "PostgreSQL", "Spring"]
 type = []
 website = "https://www.progoti.com/"
@@ -923,7 +923,7 @@ tech = ["Flutter", "NextJS", "Python", "Spring"]
 type = ["E-commerce"]
 website = "https://www.rokomari.com/"
 
-["SCT Bangla Limited"]
+["SCT Bangla Ltd."]
 tech = ["Angular", "Flutter", "Laravel", "React", "SQL"]
 type = []
 website = "https://www.sct-bangla.com/"
@@ -947,7 +947,7 @@ type = []
 website = "https://www.sslwireless.com/"
 job = "https://www.sslwireless.com/all-jobs"
 
-["Samsung R&D Institute Bangladesh, Ltd.(Korea)"]
+["Samsung R&D Institute Bangladesh, Ltd."]
 tech = ["Android", "C#", "Kotlin", "MFC", "ML", "Spring", "Swift", "Tizen", "UWP", "WPF", "Windows", "iOS"]
 type = []
 website = "https://research.samsung.com/srbd"
@@ -962,7 +962,7 @@ tech = ["AWS", "Android", "DevOps", "Docker", "NodeJS", "PHP", "iOS"]
 type = []
 website = "https://sharetrip.net/"
 
-["Sheba Technologies Limited"]
+["Sheba Technologies Ltd."]
 tech = ["Android", "C++", "Java"]
 type = []
 website = "https://www.shebatech.com.bd/"
@@ -979,13 +979,13 @@ type = ["E-commerce"]
 website = "https://shopup.com.bd/"
 job = "https://shopup.org/career"
 
-["Silicon Orchard Limited"]
+["Silicon Orchard Ltd."]
 tech = ["Android", "Blockchain", "NodeJS", "PHP", "iOS"]
 type = []
 website = "https://www.siliconorchard.com/"
 job = "https://www.siliconorchard.com/career"
 
-["Singularity Limited"]
+["Singularity Ltd."]
 tech = []
 type = []
 website = "https://singularitybd.com/"
@@ -1010,7 +1010,7 @@ tech = ["Android", "Flutter", "ReactNative", "VueJS", "iOS"]
 type = []
 website = "https://softzino.com/"
 
-["Sonali Polaris FT Limited"]
+["Sonali Polaris FT Ltd."]
 tech = ["Java"]
 type = []
 website = "http://www.spftl.com/"
@@ -1050,12 +1050,12 @@ tech = [".NET", "AngularJS", "ArcGIS", "MongoDB", "SQL"]
 type = []
 website = "https://streamstech.com.bd/"
 
-["Systems Solutions & Development Technologies Ltd. (SSD-TECH)"]
+["SSD-TECH"]
 tech = ["C", "Java", "Linux", "MySQL", "NodeJS", "PHP"]
 type = []
 website = "https://ssd-tech.io/"
 
-["TAPPWARE Solutions Limited"]
+["TAPPWARE Solutions Ltd."]
 tech = [".NET", "Android", "C#", "CakePHP", "Django", "Flutter", "Ionic", "Laravel", "Less", "MongoDB", "MySQL", "PostgreSQL", "RabbitMQ", "SCSS", "Spring", "VueJS", "WordPress", "jQuery"]
 type = []
 website = "https://tappware.com/"
@@ -1071,7 +1071,7 @@ tech = []
 type = []
 website = "https://www.techflixbd.com/"
 
-["Technext Limited"]
+["Technext Ltd."]
 tech = ["Bootstrap", "NextJS"]
 type = []
 website = "https://technext.it/"
@@ -1082,12 +1082,12 @@ tech = ["DevOps", "Flutter", "Go", "React"]
 type = []
 website = "https://www.digigate360.com/"
 
-["TechnoVista Limited"]
+["TechnoVista Ltd."]
 tech = [".NET", "Android", "C#", "CodeIgniter", "Ionic", "Laravel", "Less", "MySQL", "PostgreSQL", "SCSS", "Spring", "VueJS", "WordPress", "jQuery"]
 type = []
 website = "https://technovista.com.bd/"
 
-["Technohaven Company Limited"]
+["Technohaven Company Ltd."]
 tech = ["Android", "Angular", "Blockchain", "ML", "NodeJS", "React", "Rust", "iOS"]
 type = []
 website = "https://technohaven.com/"
@@ -1109,7 +1109,7 @@ tech = ["Joomla", "Laravel", "React"]
 type = []
 website = "https://www.themexpert.com/"
 
-["Themeperch Limited"]
+["Themeperch Ltd."]
 tech = ["Bootstrap", "NextJS", "TailwindCSS", "WordPress"]
 type = []
 website = "https://themeperch.net/"
@@ -1132,7 +1132,7 @@ tech = ["React", "SpringBoot"]
 type = []
 website = "https://www.timetackle.com/"
 
-["Triva It Limited"]
+["Triva It Ltd."]
 tech = []
 type = []
 website = "https://www.trivaitltd.com/"
@@ -1153,7 +1153,7 @@ type = []
 website = "https://www.vantage.com/"
 facebook = "https://www.facebook.com/VantageLabsDhaka/"
 
-["Vivasoft Limited"]
+["Vivasoft Ltd."]
 tech = ["C#", "Flutter", "Go", "Java", "Python"]
 type = []
 website = "https://www.vivasoftltd.com/"
@@ -1197,7 +1197,7 @@ twitter = "https://twitter.com/WidespaceMobile"
 linkedin = "https://www.linkedin.com/company/widespace-ab"
 facebook = "https://www.facebook.com/WidespaceMobile"
 
-["Workspace InfoTech Limited"]
+["Workspace InfoTech Ltd."]
 tech = ["Angular", "Django", "Spring"]
 type = []
 website = "https://www.workspaceit.com/"
@@ -1213,13 +1213,13 @@ tech = ["Angular", "Flutter", "Java", "MongoDB", "NodeJS"]
 type = []
 website = "https://xpeedlab.tech/"
 
-["YOTECH Limited"]
+["YOTECH Ltd."]
 tech = ["Android", "Angular", "Flutter", "MongoDB", "NodeJS", "React", "iOS"]
 type = []
 website = "https://www.yotech.ltd/"
 job = "https://www.yotech.ltd/careers"
 
-["Zaynax Limited"]
+["Zaynax Ltd."]
 tech = ["Android", "MongoDB", "NodeJS", "React", "iOS"]
 type = []
 website = "http://www.zaynax.com/"
@@ -1243,7 +1243,7 @@ tech = ["AWS", "Android", "JSP", "JavaScript", "Servlet", "Spring"]
 type = []
 website = "https://www.bkash.com/"
 
-["hSenid Mobile Solutions Limited"]
+["hSenid Mobile Solutions Ltd."]
 tech = ["AWS", "JUnit", "Jenkins", "Kotlin", "MySQL", "NodeJS"]
 type = []
 website = "https://www.hsenidmobile.com/"
@@ -1256,13 +1256,13 @@ linkedin = "https://www.linkedin.com/company/ipay-systems-ltd./"
 facebook = "https://www.facebook.com/iPayBangladesh/"
 job = "https://www.ipay.com.bd/career"
 
-["mPower Social Enterprises Limited"]
+["mPower Social Enterprises Ltd."]
 tech = ["Android", "Java", "Python"]
 type = []
 website = "https://www.mpower-social.com/"
 job = "https://www.mpower-social.com/career"
 
-["weDevs Ltd"]
+["weDevs Ltd."]
 tech = ["Flutter", "VueJS", "WordPress"]
 type = []
 website = "https://wedevs.com/"
