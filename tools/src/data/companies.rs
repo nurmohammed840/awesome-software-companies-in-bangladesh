@@ -233,32 +233,39 @@ impl<'a> fmt::Debug for Companies<'a> {
 
 impl<'a> fmt::Display for Companies<'a> {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        writeln!(f, "| # | Company | Type | Technologies | Link |")?;
-        writeln!(f, "|:-:| ------- | ---- | ------------ | ---- |")?;
+        fn format<'a>(
+            f: &mut fmt::Formatter<'_>,
+            c: impl Iterator<Item = (&'a String, &'a Company)>,
+        ) -> fmt::Result {
+            writeln!(f, "| # | Company | Type | Technologies | Link |")?;
+            writeln!(f, "|:-:| ------- | ---- | ------------ | ---- |")?;
 
-        let mut companies: Vec<_> = self.iter().collect();
+            for (i, (name, company)) in c.into_iter().enumerate() {
+                let ty: String = company
+                    .ty
+                    .iter()
+                    .map(|s| format!("`{}` ", s.as_str()))
+                    .collect();
 
-        companies.sort_by_key(|(_, company)| company.links.job.is_none());
+                let tech: String = company
+                    .tech
+                    .iter()
+                    .map(|s| format!("`{}` ", s.as_str()))
+                    .collect();
 
-        for (i, (name, company)) in companies.into_iter().enumerate() {
-            let ty: String = company
-                .ty
-                .iter()
-                .map(|s| format!("`{}` ", s.as_str()))
-                .collect();
+                let no = i + 1;
+                let ty = if ty.is_empty() { "—" } else { ty.trim() };
+                let tech = if tech.is_empty() { "—" } else { tech.trim() };
 
-            let tech: String = company
-                .tech
-                .iter()
-                .map(|s| format!("`{}` ", s.as_str()))
-                .collect();
+                writeln!(f, "| {no} | {name} | {ty} | {tech} | {} |", company.links)?;
+            }
 
-            let no = i + 1;
-            let ty = if ty.is_empty() { "—" } else { ty.trim() };
-            let tech = if tech.is_empty() { "—" } else { tech.trim() };
-
-            writeln!(f, "| {no} | {name} | {ty} | {tech} | {} |", company.links)?;
+            Ok(())
         }
+
+        format(f, self.iter().filter(|(_, c)| c.links.job.is_some()))?;
+        writeln!(f, "\n\n")?;
+        format(f, self.iter().filter(|(_, c)| c.links.job.is_none()))?;
 
         Ok(())
     }
