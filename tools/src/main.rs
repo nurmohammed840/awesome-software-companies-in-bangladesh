@@ -37,10 +37,10 @@ struct Cli {
     update: bool,
 
     /// Format data
-    #[arg(long)]
+    #[arg(long, short)]
     fmt: bool,
 
-    #[arg(long)]
+    #[arg(long, short)]
     docs: bool,
 
     #[cfg(feature = "extra")]

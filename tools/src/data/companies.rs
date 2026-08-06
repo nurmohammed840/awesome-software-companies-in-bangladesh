@@ -57,6 +57,24 @@ pub struct Links {
     pub linkedin: Option<Url>,
     pub facebook: Option<Url>,
     pub youtube: Option<Url>,
+
+    pub job: Option<Url>,
+    pub other_job: Option<Url>,
+}
+
+impl Default for Links {
+    fn default() -> Self {
+        Links {
+            website: Url::parse("https://example.com").unwrap(),
+            github: None,
+            twitter: None,
+            linkedin: None,
+            facebook: None,
+            youtube: None,
+            job: None,
+            other_job: None,
+        }
+    }
 }
 
 impl fmt::Display for Links {
@@ -65,6 +83,7 @@ impl fmt::Display for Links {
 
         for (label, url) in [
             ("Web", Some(&self.website)),
+            ("Jobs", self.job.as_ref()),
             ("GitHub", self.github.as_ref()),
             ("YouTube", self.youtube.as_ref()),
             ("LinkedIn", self.linkedin.as_ref()),
@@ -244,27 +263,11 @@ impl<'a> fmt::Display for Companies<'a> {
     }
 }
 
+#[derive(Default)]
 pub struct CompanyData {
     pub tech: Vec<String>,
     pub ty: Vec<String>,
     pub links: Links,
-}
-
-impl Default for CompanyData {
-    fn default() -> Self {
-        Self {
-            tech: Vec::new(),
-            ty: Vec::new(),
-            links: Links {
-                website: Url::parse("https://example.com").unwrap(),
-                github: None,
-                twitter: None,
-                linkedin: None,
-                facebook: None,
-                youtube: None,
-            },
-        }
-    }
 }
 
 impl CompanyData {
