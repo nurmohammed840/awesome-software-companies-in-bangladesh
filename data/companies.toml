@@ -910,6 +910,7 @@ website = "https://retinasoft.com.bd/"
 tech = ["Django", "Flutter", "Java", "Kotlin", "NodeJS", "React", "SQL", "Swift", "TypeScript"]
 type = []
 website = "https://riseuplabs.com/"
+job = "https://riseuplabs.com/jobs/"
 
 ["Robust Research And Development Ltd."]
 tech = ["C#", "Flutter", "Kotlin", "NextJS", "Python", "Swift", "TypeScript"]
@@ -938,6 +939,7 @@ linkedin = "https://www.linkedin.com/company/selise/"
 tech = ["Blockchain", "Flutter", "Java", "Kotlin", "React", "Swift"]
 type = []
 website = "https://sjinnovation.com/"
+job = "https://career.sjinnovation.com/#jobs"
 
 ["SSL Wireless"]
 tech = ["Java", "JavaScript", "Laravel", "MySQL"]
@@ -975,6 +977,7 @@ website = "https://shellbeehaken.com/"
 tech = ["AWS", "Docker", "Flutter", "MongoDB", "MySQL", "NodeJS", "React"]
 type = ["E-commerce"]
 website = "https://shopup.com.bd/"
+job = "https://shopup.org/career"
 
 ["Silicon Orchard Limited"]
 tech = ["Android", "Blockchain", "NodeJS", "PHP", "iOS"]
@@ -1017,6 +1020,7 @@ tech = [".NET", "Android", "AngularJS"]
 type = []
 website = "https://www.southtechgroup.com/"
 linkedin = "https://www.linkedin.com/company/southtechgroup/"
+job = "https://career.southtechgroup.com/"
 
 [SovWare]
 tech = ["Flutter", "JavaScript", "Laravel", "WordPress"]
@@ -1029,6 +1033,7 @@ job = "https://www.sovware.com/career"
 tech = ["Android", "NodeJS", "ReactNative"]
 type = []
 website = "https://springrainit.com/"
+job = "https://springrain.io/careers/#jobs"
 
 ["Square Health Ltd."]
 tech = ["Android", "Angular", "Java", "React"]
@@ -1114,6 +1119,7 @@ tech = ["Java"]
 type = []
 website = "https://therap.recruiterbox.com/"
 linkedin = "https://www.linkedin.com/company/therapbd/"
+job = "https://therap.hire.trakstar.com/"
 
 ["TigerIT Bangladesh Ltd."]
 tech = ["Java"]
@@ -1230,6 +1236,7 @@ job = "https://authlab.io/jobs/"
 tech = ["Android", "PHP", "iOS"]
 type = []
 website = "https://www.belivit.com/"
+job = "https://www.belivit.com/vacancies"
 
 [bkash]
 tech = ["AWS", "Android", "JSP", "JavaScript", "Servlet", "Spring"]

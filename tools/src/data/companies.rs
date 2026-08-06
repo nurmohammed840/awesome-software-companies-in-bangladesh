@@ -59,7 +59,6 @@ pub struct Links {
     pub youtube: Option<Url>,
 
     pub job: Option<Url>,
-    pub other_job: Option<Url>,
 }
 
 impl Default for Links {
@@ -72,7 +71,6 @@ impl Default for Links {
             facebook: None,
             youtube: None,
             job: None,
-            other_job: None,
         }
     }
 }
@@ -82,8 +80,8 @@ impl fmt::Display for Links {
         let mut first = true;
 
         for (label, url) in [
-            ("Web", Some(&self.website)),
             ("Jobs", self.job.as_ref()),
+            ("Web", Some(&self.website)),
             ("GitHub", self.github.as_ref()),
             ("YouTube", self.youtube.as_ref()),
             ("LinkedIn", self.linkedin.as_ref()),
@@ -238,7 +236,11 @@ impl<'a> fmt::Display for Companies<'a> {
         writeln!(f, "| # | Company | Type | Technologies | Link |")?;
         writeln!(f, "|:-:| ------- | ---- | ------------ | ---- |")?;
 
-        for (i, (name, company)) in self.iter().enumerate() {
+        let mut companies: Vec<_> = self.iter().collect();
+
+        companies.sort_by_key(|(_, company)| company.links.job.is_none());
+
+        for (i, (name, company)) in companies.into_iter().enumerate() {
             let ty: String = company
                 .ty
                 .iter()
