@@ -941,6 +941,11 @@ type = []
 website = "https://sjinnovation.com/"
 job = "https://career.sjinnovation.com/#jobs"
 
+[SSD-TECH]
+tech = ["C", "Java", "Linux", "MySQL", "NodeJS", "PHP"]
+type = []
+website = "https://ssd-tech.io/"
+
 ["SSL Wireless"]
 tech = ["Java", "JavaScript", "Laravel", "MySQL"]
 type = []
@@ -1049,11 +1054,6 @@ website = "https://strativ.se/en/"
 tech = [".NET", "AngularJS", "ArcGIS", "MongoDB", "SQL"]
 type = []
 website = "https://streamstech.com.bd/"
-
-["SSD-TECH"]
-tech = ["C", "Java", "Linux", "MySQL", "NodeJS", "PHP"]
-type = []
-website = "https://ssd-tech.io/"
 
 ["TAPPWARE Solutions Ltd."]
 tech = [".NET", "Android", "C#", "CakePHP", "Django", "Flutter", "Ionic", "Laravel", "Less", "MongoDB", "MySQL", "PostgreSQL", "RabbitMQ", "SCSS", "Spring", "VueJS", "WordPress", "jQuery"]
