@@ -9,7 +9,7 @@ pub fn url_to_filename(url: &str) -> String {
     utf8_percent_encode(url, NON_ALPHANUMERIC).to_string()
 }
 
-pub fn fetch(url: &str) -> Result<String> {
+pub fn fetch(url: &Url) -> Result<String> {
     let url = normalize_url(url)?;
     let cache_path = cache_dir()?.join(url_to_filename(url.as_str()));
 
@@ -30,8 +30,8 @@ pub fn fetch(url: &str) -> Result<String> {
     Ok(data)
 }
 
-pub fn normalize_url(url: &str) -> Result<Url> {
-    let mut url = Url::parse(url)?;
+pub fn normalize_url(url: &Url) -> Result<Url> {
+    let mut url = url.clone();
     url.set_fragment(None);
 
     let path = url.path().trim_end_matches('/').to_string();

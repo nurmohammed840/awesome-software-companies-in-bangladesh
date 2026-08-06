@@ -2,6 +2,7 @@ use super::{Map, Set};
 
 use serde::{Deserialize, Serialize};
 use std::{fmt, format as fmt, mem, ops};
+use url::Url;
 
 use crate::{
     Result,
@@ -10,7 +11,7 @@ use crate::{
     utils::{keyword_hinter::HintDex, url_host},
 };
 
-#[derive(Debug, Serialize, Deserialize, Default)]
+#[derive(Debug, Serialize, Deserialize)]
 pub struct Company {
     pub tech: Span<Set<Span<String>>>,
 
@@ -48,14 +49,14 @@ impl Company {
     }
 }
 
-#[derive(Serialize, Deserialize, Default)]
+#[derive(Serialize, Deserialize)]
 pub struct Links {
-    pub website: String,
-    pub github: Option<String>,
-    pub twitter: Option<String>,
-    pub linkedin: Option<String>,
-    pub facebook: Option<String>,
-    pub youtube: Option<String>,
+    pub website: Url,
+    pub github: Option<Url>,
+    pub twitter: Option<Url>,
+    pub linkedin: Option<Url>,
+    pub facebook: Option<Url>,
+    pub youtube: Option<Url>,
 }
 
 impl fmt::Display for Links {
@@ -116,7 +117,7 @@ impl<'a> Companies<'a> {
         toml::to_string(&self.list)
     }
 
-    pub fn find_by_website(&mut self, url: &str) -> Option<(&String, &mut Company)> {
+    pub fn find_by_website(&mut self, url: &Url) -> Option<(&String, &mut Company)> {
         let target = url_host(url)?;
         self.iter_mut().find(|(_, company)| {
             url_host(&company.links.website).is_some_and(|host| host == target)
@@ -243,11 +244,27 @@ impl<'a> fmt::Display for Companies<'a> {
     }
 }
 
-#[derive(Default)]
 pub struct CompanyData {
     pub tech: Vec<String>,
     pub ty: Vec<String>,
     pub links: Links,
+}
+
+impl Default for CompanyData {
+    fn default() -> Self {
+        Self {
+            tech: Vec::new(),
+            ty: Vec::new(),
+            links: Links {
+                website: Url::parse("https://example.com").unwrap(),
+                github: None,
+                twitter: None,
+                linkedin: None,
+                facebook: None,
+                youtube: None,
+            },
+        }
+    }
 }
 
 impl CompanyData {
@@ -265,33 +282,33 @@ impl CompanyData {
         self
     }
 
-    pub fn set_website(&mut self, url: impl Into<String>) -> &mut Self {
-        self.links.website = url.into();
+    pub fn set_website(&mut self, url: &Url) -> &mut Self {
+        self.links.website = url.clone();
         self
     }
 
-    pub fn set_github(&mut self, url: impl Into<String>) -> &mut Self {
-        self.links.github = Some(url.into());
+    pub fn set_github(&mut self, url: &Url) -> &mut Self {
+        self.links.github = Some(url.clone());
         self
     }
 
-    pub fn set_linkedin(&mut self, url: impl Into<String>) -> &mut Self {
-        self.links.linkedin = Some(url.into());
+    pub fn set_linkedin(&mut self, url: &Url) -> &mut Self {
+        self.links.linkedin = Some(url.clone());
         self
     }
 
-    pub fn set_twitter(&mut self, url: impl Into<String>) -> &mut Self {
-        self.links.twitter = Some(url.into());
+    pub fn set_twitter(&mut self, url: &Url) -> &mut Self {
+        self.links.twitter = Some(url.clone());
         self
     }
 
-    pub fn set_facebook(&mut self, url: impl Into<String>) -> &mut Self {
-        self.links.facebook = Some(url.into());
+    pub fn set_facebook(&mut self, url: &Url) -> &mut Self {
+        self.links.facebook = Some(url.clone());
         self
     }
 
-    pub fn set_youtube(&mut self, url: impl Into<String>) -> &mut Self {
-        self.links.youtube = Some(url.into());
+    pub fn set_youtube(&mut self, url: &Url) -> &mut Self {
+        self.links.youtube = Some(url.clone());
         self
     }
 }

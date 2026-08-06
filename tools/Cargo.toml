@@ -12,7 +12,7 @@ clap = { version = "4", features = ["derive"] }
 serde = { version = "1.0", features = ["derive"] }
 
 toml = "*"
-url = "2"
+url = { version = "2", features = ["serde"] }
 
 log = "*"
 annotate-snippets = "0.12"

@@ -4,9 +4,9 @@ pub mod logger;
 pub mod text_file;
 
 #[cfg(feature = "extra")]
-pub mod zlib;
-#[cfg(feature = "extra")]
 pub mod fetch;
+#[cfg(feature = "extra")]
+pub mod zlib;
 
 use url::Url;
 
@@ -31,8 +31,7 @@ pub trait StrIterExt<'a>: Iterator<Item = &'a str> {
 
 impl<'a, I> StrIterExt<'a> for I where I: Iterator<Item = &'a str> {}
 
-pub fn url_host(url: &str) -> Option<String> {
-    let utl = Url::parse(url).ok()?;
-    let host = utl.host_str()?.trim_start_matches("www.");
+pub fn url_host(url: &Url) -> Option<String> {
+    let host = url.host_str()?.trim_start_matches("www.");
     Some(host.to_ascii_lowercase())
 }

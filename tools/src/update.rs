@@ -27,12 +27,12 @@ pub fn repos(schema: &Schema, companies: &mut Companies<'_>, dir: &Path) -> Resu
         let mut data = CompanyData::default();
         for link in c.links.iter() {
             match link {
-                Link::Website(url) => data.set_website(*url),
-                Link::Facebook(url) => data.set_facebook(*url),
-                Link::LinkedIn(url) => data.set_linkedin(*url),
-                Link::Twitter(url) => data.set_twitter(*url),
-                Link::YouTube(url) => data.set_youtube(*url),
-                Link::Github(url) => data.set_github(*url),
+                Link::Website(url) => data.set_website(url),
+                Link::Facebook(url) => data.set_facebook(url),
+                Link::LinkedIn(url) => data.set_linkedin(url),
+                Link::Twitter(url) => data.set_twitter(url),
+                Link::YouTube(url) => data.set_youtube(url),
+                Link::Github(url) => data.set_github(url),
                 Link::Instagram(_) => &mut data,
             };
         }

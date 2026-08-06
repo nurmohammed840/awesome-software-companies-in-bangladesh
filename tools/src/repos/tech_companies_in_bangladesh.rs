@@ -3,6 +3,8 @@
 use std::fmt;
 use std::slice::Iter;
 
+use url::Url;
+
 use crate::utils::StrIterExt;
 use crate::utils::chunks_exact;
 
@@ -110,28 +112,30 @@ pub fn parse_tables(input: &str) -> impl Iterator<Item = Table<'_>> {
 pub struct Company<'a> {
     pub name: &'a str,
     pub technologies: Vec<&'a str>,
-    pub links: Vec<Link<'a>>,
+    pub links: Vec<Link>,
 }
 
 #[derive(Debug, Clone)]
-pub enum Link<'a> {
-    Website(&'a str),
-    Facebook(&'a str),
-    LinkedIn(&'a str),
-    Twitter(&'a str),
-    YouTube(&'a str),
-    Github(&'a str),
-    Instagram(&'a str),
+pub enum Link {
+    Website(Url),
+    Facebook(Url),
+    LinkedIn(Url),
+    Twitter(Url),
+    YouTube(Url),
+    Github(Url),
+    Instagram(Url),
 }
 
-impl<'a> Link<'a> {
-    pub fn parse(s: &'a str) -> Option<Self> {
+impl Link {
+    pub fn parse(s: &str) -> Option<Self> {
         let (url, kind) = s.rsplit_once('[')?;
 
         let url = url.trim();
         if url.is_empty() {
             return None;
         }
+
+        let url = url.parse().ok()?;
 
         Some(match kind.strip_suffix(']')?.to_lowercase().as_str() {
             "website" => Link::Website(url),
@@ -150,9 +154,9 @@ impl<'a> Link<'a> {
 }
 
 impl<'a> Company<'a> {
-    pub fn website(&self) -> Option<&str> {
+    pub fn website(&self) -> Option<&Url> {
         self.links.iter().find_map(|link| match link {
-            Link::Website(url) => Some(*url),
+            Link::Website(url) => Some(url),
             _ => None,
         })
     }
