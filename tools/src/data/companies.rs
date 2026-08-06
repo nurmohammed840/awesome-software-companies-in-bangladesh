@@ -239,12 +239,11 @@ impl<'a> fmt::Display for Companies<'a> {
         writeln!(f, "|:-:| ------- | ---- | ------------ | ---- |")?;
 
         for (i, (name, company)) in self.iter().enumerate() {
-            let ty = company
+            let ty: String = company
                 .ty
                 .iter()
-                .map(|s| s.as_str())
-                .collect::<Vec<_>>()
-                .join(", ");
+                .map(|s| format!("`{}` ", s.as_str()))
+                .collect();
 
             let tech: String = company
                 .tech
@@ -253,7 +252,7 @@ impl<'a> fmt::Display for Companies<'a> {
                 .collect();
 
             let no = i + 1;
-            let ty = if ty.is_empty() { "—" } else { &ty };
+            let ty = if ty.is_empty() { "—" } else { ty.trim() };
             let tech = if tech.is_empty() { "—" } else { tech.trim() };
 
             writeln!(f, "| {no} | {name} | {ty} | {tech} | {} |", company.links)?;
