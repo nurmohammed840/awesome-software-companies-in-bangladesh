@@ -251,7 +251,7 @@ website = "https://danpite.tech/"
 
 ["Daraz Bangladesh"]
 tech = ["Angular", "CodeIgniter", "GraphQL", "Laravel", "NodeJS", "VueJS"]
-type = ["E-Commerce"]
+type = ["E-commerce"]
 website = "https://careers.daraz.com/"
 
 ["Data Grid Limited"]
@@ -545,7 +545,7 @@ website = "https://www.jbc-ltd.com/en"
 
 ["Jatri Services Limited"]
 tech = []
-type = []
+type = ["E-logistics"]
 website = "https://www.jatri.co"
 
 [Joomshaper]
@@ -646,7 +646,7 @@ facebook = "https://www.facebook.com/mediusware/"
 
 ["Meghna Group of Industries (MGI)"]
 tech = ["Android", "Java", "MySQL", "PHP", "iOS"]
-type = []
+type = ["E-commerce"]
 website = "https://www.mgi.org/"
 
 ["Metafour Asia"]
@@ -807,12 +807,12 @@ website = "https://www.ottoint.com/"
 
 ["Paperfly Ltd"]
 tech = ["Laravel", "React", "VueJS"]
-type = []
+type = ["E-logistics"]
 website = "https://www.paperfly.com.bd/"
 
 ["Pathao Ltd"]
 tech = ["Android", "Go", "Kubernetes", "NodeJS", "PHP", "iOS"]
-type = ["E-Commerce"]
+type = ["E-logistics"]
 website = "https://pathao.com/"
 
 ["Penta Global Ltd"]
@@ -878,7 +878,7 @@ linkedin = "https://www.linkedin.com/company/rrad-bd/"
 
 [Rokomari]
 tech = ["Flutter", "NextJS", "Python", "Spring"]
-type = []
+type = ["E-commerce"]
 website = "https://www.rokomari.com/"
 
 ["SCT Bangla Limited"]
@@ -929,7 +929,7 @@ website = "https://shellbeehaken.com/"
 
 [Shopup]
 tech = ["AWS", "Docker", "Flutter", "MongoDB", "MySQL", "NodeJS", "React"]
-type = []
+type = ["E-commerce"]
 website = "https://shopup.com.bd/"
 
 ["Silicon Orchard Limited"]
@@ -1083,7 +1083,7 @@ website = "https://www.trivaitltd.com/"
 
 [TruckLagbe]
 tech = ["Angular", "Flutter", "NodeJS", "PostgreSQL"]
-type = []
+type = ["E-logistics"]
 website = "https://trucklagbe.com"
 
 ["UPAY (UCB Fintech)"]

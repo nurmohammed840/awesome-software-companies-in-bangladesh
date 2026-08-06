@@ -1,7 +1,8 @@
 # this list are not exhaustive. Please open a pull request to add missing type, language, technology.
 
 Company-Type = [
-  "E-Commerce",
+  "E-commerce",
+  "E-logistics",
   "SaaS",
   "Game Development",
   "Crypto",

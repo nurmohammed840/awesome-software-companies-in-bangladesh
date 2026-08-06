@@ -46,7 +46,7 @@
 | 44 | Craftsmen (EU) | — | `AI` `AWS` `Azure` `GCP` `NodeJS` `Python` `ReactNative` `Redux` | [Web](https://www.craftsmenltd.com/) <br> [LinkedIn](https://www.linkedin.com/organization-guest/company/craftsmenltd) |
 | 45 | Daffodil Software Limited (DSL) | — | `.NET` `Android` `Java` `PHP` `iOS` | [Web](http://daffodilsoft.com/) |
 | 46 | Danpite.Tech | — | `Flutter` `Laravel` `React` | [Web](https://danpite.tech/) |
-| 47 | Daraz Bangladesh | E-Commerce | `Angular` `CodeIgniter` `GraphQL` `Laravel` `NodeJS` `VueJS` | [Web](https://careers.daraz.com/) |
+| 47 | Daraz Bangladesh | E-commerce | `Angular` `CodeIgniter` `GraphQL` `Laravel` `NodeJS` `VueJS` | [Web](https://careers.daraz.com/) |
 | 48 | Data Grid Limited | — | `.NET` `Angular` `C#` | [Web](https://datagridltd.com/) |
 | 49 | DataSoft | — | `.NET` `Angular` `C#` `SpringBoot` | [Web](http://datasoft-bd.com/) |
 | 50 | Databiz Software Limited | — | `.NET` `Android` `PHP` `iOS` | [Web](http://www.databizsoftware.com/) |
@@ -104,7 +104,7 @@
 | 102 | Inverse.AI | — | `Android` `iOS` | [Web](https://inverseai.com/) |
 | 103 | Isratts Technologies | — | — | [Web](http://www.israttstech.com/) |
 | 104 | JB Connect Ltd.(Japan Bangladesh Connect Ltd.) | — | `DevOps` | [Web](https://www.jbc-ltd.com/en) |
-| 105 | Jatri Services Limited | — | — | [Web](https://www.jatri.co) |
+| 105 | Jatri Services Limited | E-logistics | — | [Web](https://www.jatri.co) |
 | 106 | Joomshaper | — | `Joomla` `React` `WordPress` | [Web](https://www.joomshaper.com) |
 | 107 | JoulesLabs | — | `React` `WordPress` | [Web](https://jouleslabs.com/) |
 | 108 | Kaz Software | — | `.NET` `AngularJS` `Java` `PHP` `React` | [Web](http://kaz.com.bd/) |
@@ -122,7 +122,7 @@
 | 120 | Mazegeek Technologies BD Ltd. | — | `.NET` `AWS` `Android` `Angular` `Docker` `Firebase` `Laravel` `NodeJS` `Python` `React` `VueJS` `iOS` | [Web](https://www.mazegeek.com/) |
 | 121 | Medina Tech Ltd. | — | `AR` `AWS` `Android` `Django` `ML` `NextJS` `NodeJS` `PHP` `ReactNative` `Unity` `VueJS` `iOS` | [Web](https://www.medinatech.co//) <br> [LinkedIn](https://www.linkedin.com/company/medina-tech/) |
 | 122 | Mediusware Ltd. | — | `Angular` `NextJS` `VueJS` | [Web](https://www.mediusware.com/) <br> [LinkedIn](https://www.linkedin.com/company/mediusware/) |
-| 123 | Meghna Group of Industries (MGI) | — | `Android` `Java` `MySQL` `PHP` `iOS` | [Web](https://www.mgi.org/) |
+| 123 | Meghna Group of Industries (MGI) | E-commerce | `Android` `Java` `MySQL` `PHP` `iOS` | [Web](https://www.mgi.org/) |
 | 124 | Metafour Asia | — | `Spring` | [Web](http://www.metafour.com) |
 | 125 | Metatude Asia Ltd | — | `.NET` `AWS` `Angular` `Java` | [Web](https://www.fellowdigitals.com/metatude) <br> [LinkedIn](https://www.linkedin.com/company/metatude-asia-ltd/) |
 | 126 | Mevrik Ltd. | — | `AWS` `Celery` `ClickHouse` `Django` `Docker` `Elasticsearch` `FastAPI` `GitHub` `Gunicorn` `Kafka` `Kubernetes` `LLM` `Laravel` `MongoDB` `MySQL` `Nginx` `PostgreSQL` `React` `Redis` `TailwindCSS` | [Web](https://www.mevrik.com/) <br> [YouTube](https://www.youtube.com/@mevrikdcx) <br> [LinkedIn](https://www.linkedin.com/company/mevrik/) |
@@ -152,8 +152,8 @@
 | 150 | Orbund LLC | — | `Android` `Java` `iOS` | [Web](https://www.orbund.com/) |
 | 151 | OrvionSoft | — | `Angular` `C#` `Laravel` `NextJS` `NodeJS` | [Web](https://www.orvionsoft.com/) |
 | 152 | Otto International Ltd. | — | `AWS` `Android` `ExpressJS` `Flutter` `Gatsby` `MongoDB` `MySQL` `WordPress` `iOS` | [Web](https://www.ottoint.com/) |
-| 153 | Paperfly Ltd | — | `Laravel` `React` `VueJS` | [Web](https://www.paperfly.com.bd/) |
-| 154 | Pathao Ltd | E-Commerce | `Android` `Go` `Kubernetes` `NodeJS` `PHP` `iOS` | [Web](https://pathao.com/) |
+| 153 | Paperfly Ltd | E-logistics | `Laravel` `React` `VueJS` | [Web](https://www.paperfly.com.bd/) |
+| 154 | Pathao Ltd | E-logistics | `Android` `Go` `Kubernetes` `NodeJS` `PHP` `iOS` | [Web](https://pathao.com/) |
 | 155 | Penta Global Ltd | — | `Java` `Kubernetes` `NodeJS` `PostgreSQL` `Python` `React` | [Web](https://www.pentabd.com/) |
 | 156 | PixelNet Technologies Ltd | — | `Ionic` `Magento` `MongoDB` `MySQL` `NodeJS` `Rails` | [Web](http://www.pixelnettech.com/) |
 | 157 | Portonics Limited | — | `AWS` `Android` `Docker` `MySQL` `NodeJS` `PHP` `PostgreSQL` `Python` `React` `iOS` | [Web](http://portonics.com/) |
@@ -166,7 +166,7 @@
 | 164 | Retina Soft | — | `Android` `Laravel` `React` `VueJS` `iOS` | [Web](https://retinasoft.com.bd/) |
 | 165 | RiseUp Labs | — | `Django` `Flutter` `Java` `Kotlin` `NodeJS` `React` `SQL` `Swift` `TypeScript` | [Web](https://riseuplabs.com) |
 | 166 | Robust Research And Development Ltd. | — | `C#` `Flutter` `Kotlin` `NextJS` `Python` `Swift` `TypeScript` | [Web](https://rrad.ltd/) <br> [LinkedIn](https://www.linkedin.com/company/rrad-bd/) |
-| 167 | Rokomari | — | `Flutter` `NextJS` `Python` `Spring` | [Web](https://www.rokomari.com/) |
+| 167 | Rokomari | E-commerce | `Flutter` `NextJS` `Python` `Spring` | [Web](https://www.rokomari.com/) |
 | 168 | SCT Bangla Limited | — | `Angular` `Flutter` `Laravel` `React` `SQL` | [Web](https://www.sct-bangla.com/) |
 | 169 | SELISE Digital Platforms (Switzerland) | — | `.NET` `Android` `AngularJS` `NodeJS` `Python` `iOS` | [Web](https://selisegroup.com/) <br> [LinkedIn](https://www.linkedin.com/company/selise/) |
 | 170 | SJ Innovation | — | `Blockchain` `Flutter` `Java` `Kotlin` `React` `Swift` | [Web](https://sjinnovation.com) |
@@ -176,7 +176,7 @@
 | 174 | ShareTrip | — | `AWS` `Android` `DevOps` `Docker` `NodeJS` `PHP` `iOS` | [Web](https://sharetrip.net/) |
 | 175 | Sheba Technologies Limited | — | `Android` `C++` `Java` | [Web](https://www.shebatech.com.bd/) |
 | 176 | ShellBeeHaken | — | `Elasticsearch` `Electron` `Lambda` `MongoDB` `MySQL` `NextJS` `ReactNative` `Redis` `SQS` `SpringBoot` | [Web](https://shellbeehaken.com/) |
-| 177 | Shopup | — | `AWS` `Docker` `Flutter` `MongoDB` `MySQL` `NodeJS` `React` | [Web](https://shopup.com.bd/) |
+| 177 | Shopup | E-commerce | `AWS` `Docker` `Flutter` `MongoDB` `MySQL` `NodeJS` `React` | [Web](https://shopup.com.bd/) |
 | 178 | Silicon Orchard Limited | — | `Android` `Blockchain` `NodeJS` `PHP` `iOS` | [Web](https://www.siliconorchard.com/) |
 | 179 | Singularity Limited | — | — | [Web](https://singularitybd.com/) <br> [LinkedIn](https://www.linkedin.com/company/singularity-limited/) |
 | 180 | SoftBD Ltd. | — | — | [Web](https://softbdltd.com/) |
@@ -205,7 +205,7 @@
 | 203 | TigerIT Bangladesh Ltd. | — | `Java` | [Web](http://www.tigerit.com/) <br> [LinkedIn](https://www.linkedin.com/company/tigerit-bangladesh-limited/) |
 | 204 | TimeTackle (US) | — | `React` `SpringBoot` | [Web](https://www.timetackle.com/) |
 | 205 | Triva It Limited | — | — | [Web](https://www.trivaitltd.com/) |
-| 206 | TruckLagbe | — | `Angular` `Flutter` `NodeJS` `PostgreSQL` | [Web](https://trucklagbe.com) |
+| 206 | TruckLagbe | E-logistics | `Angular` `Flutter` `NodeJS` `PostgreSQL` | [Web](https://trucklagbe.com) |
 | 207 | UPAY (UCB Fintech) | — | `Android` `Blockchain` `Django` `Flask` `NodeJS` `React` `iOS` | [Web](https://www.upaybd.com/) |
 | 208 | Vantage Labs (USA) | — | `AngularJS` `Java` `PHP` | [Web](https://www.vantage.com/) |
 | 209 | Vivasoft Limited | — | `C#` `Flutter` `Go` `Java` `Python` | [Web](https://www.vivasoftltd.com/) <br> [LinkedIn](https://www.linkedin.com/company/vivasoftltd/) |
