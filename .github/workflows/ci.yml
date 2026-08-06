@@ -15,11 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Install Rust and Cargo
+      - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
 
       - name: Cache Cargo dependencies
-      - uses: Swatinem/rust-cache@v2
+        uses: Swatinem/rust-cache@v2
         with:
           workspaces: |
             tools -> tools/target
