@@ -67,8 +67,8 @@ impl fmt::Display for Links {
             ("GitHub", self.github.as_ref()),
             ("YouTube", self.youtube.as_ref()),
             ("LinkedIn", self.linkedin.as_ref()),
-            ("Facebook", self.facebook.as_ref()),
-            ("Twitter", self.twitter.as_ref()),
+            // ("Facebook", self.facebook.as_ref()),
+            // ("Twitter", self.twitter.as_ref()),
         ] {
             let Some(url) = url else { continue };
 

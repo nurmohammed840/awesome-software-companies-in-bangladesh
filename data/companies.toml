@@ -251,7 +251,7 @@ website = "https://danpite.tech/"
 
 ["Daraz Bangladesh"]
 tech = ["Angular", "CodeIgniter", "GraphQL", "Laravel", "NodeJS", "VueJS"]
-type = []
+type = ["E-Commerce"]
 website = "https://careers.daraz.com/"
 
 ["Data Grid Limited"]
@@ -812,7 +812,7 @@ website = "https://www.paperfly.com.bd/"
 
 ["Pathao Ltd"]
 tech = ["Android", "Go", "Kubernetes", "NodeJS", "PHP", "iOS"]
-type = []
+type = ["E-Commerce"]
 website = "https://pathao.com/"
 
 ["Penta Global Ltd"]
