@@ -3,11 +3,9 @@
 Company-Type = [
   "E-commerce",
   "E-logistics",
-  "SaaS",
-  "Game Development",
-  "Crypto",
-  "Security",
-  "AI",
+  # "SaaS",
+  # "Crypto",
+  # "AI",
 ]
 
 [Technology]
