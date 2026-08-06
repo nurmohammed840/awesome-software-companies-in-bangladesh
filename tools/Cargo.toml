@@ -3,6 +3,10 @@ name = "cli"
 version = "0.1.0"
 edition = "2024"
 
+[features]
+default = ["extra"]
+extra = ["dep:scraper", "dep:serde_json", "dep:percent-encoding", "dep:flate2", "dep:reqwest"]
+
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 serde = { version = "1.0", features = ["derive"] }
@@ -13,11 +17,11 @@ url = "2"
 log = "*"
 annotate-snippets = "0.12"
 
-scraper = "0.27"
-serde_json = "1"
-percent-encoding = "2"
-flate2 = { version = "1", features = ["zlib-rs"], default-features = false }
-reqwest = { version = "0.13", default-features = false, features = [
+scraper = { version = "0.27", optional = true }
+serde_json = { version = "1", optional = true }
+percent-encoding = { version = "2", optional = true }
+flate2 = { version = "1", features = ["zlib-rs"], default-features = false, optional = true }
+reqwest = { version = "0.13", default-features = false, optional = true, features = [
     "blocking",
     "rustls",
     "gzip",

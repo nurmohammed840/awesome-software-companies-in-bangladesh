@@ -1,3 +1,4 @@
+#[cfg(feature = "extra")]
 mod info;
 mod update;
 
@@ -6,15 +7,12 @@ mod error;
 mod repos;
 mod utils;
 
-use crate::{
-    data::{Companies, Schema},
-    info::fetch_info,
-    repos::subtree,
-    utils::{fetch, logger::Logger, text_file::TextFile},
-};
-use clap::{Parser, Subcommand};
-use log::info;
+use clap::Parser;
 use std::{fs, path::PathBuf, process};
+
+use data::{Companies, Schema};
+use repos::subtree;
+use utils::{logger::Logger, text_file::TextFile};
 
 pub type DynError = Box<dyn std::error::Error + Send + Sync>;
 pub type Result<T = (), E = DynError> = std::result::Result<T, E>;
@@ -45,11 +43,13 @@ struct Cli {
     #[arg(long)]
     docs: bool,
 
+    #[cfg(feature = "extra")]
     #[command(subcommand)]
     command: Option<Command>,
 }
 
-#[derive(Subcommand, Debug)]
+#[cfg(feature = "extra")]
+#[derive(clap::Subcommand, Debug)]
 enum Command {
     /// Fetch websites and extract `schema.org` data.
     Fetch {
@@ -84,6 +84,8 @@ fn cli() -> Result {
         mut update,
         mut fmt,
         mut docs,
+
+        #[cfg(feature = "extra")]
         command,
     } = Cli::parse();
 
@@ -116,12 +118,13 @@ fn cli() -> Result {
         docs = true;
     }
 
+    #[cfg(feature = "extra")]
     if let Some(Command::Fetch { force }) = command {
         if force {
-            info!("Clearing cache...");
-            fetch::clear_cache_dir()?;
+            log::info!("Clearing cache...");
+            utils::fetch::clear_cache_dir()?;
         }
-        fetch_info(&companies, &dir)?;
+        info::fetch_info(&companies, &dir)?;
     }
 
     if fmt {

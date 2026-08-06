@@ -19,8 +19,11 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
 
       - name: Cache Cargo dependencies
-        uses: Swatinem/rust-cache@v2
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            tools -> tools/target
 
       - name: Run CLI
         working-directory: tools
-        run: cargo run -- ../
+        run: cargo run --no-default-features -- ../

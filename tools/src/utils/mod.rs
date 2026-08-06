@@ -1,9 +1,12 @@
-pub mod fetch;
 pub mod keyword_hinter;
 pub mod levenshtein_distance;
 pub mod logger;
 pub mod text_file;
+
+#[cfg(feature = "extra")]
 pub mod zlib;
+#[cfg(feature = "extra")]
+pub mod fetch;
 
 use url::Url;
 
