@@ -4,6 +4,7 @@ mod update;
 
 mod data;
 mod error;
+mod job_crawler;
 mod repos;
 mod utils;
 
@@ -42,6 +43,9 @@ struct Cli {
 
     #[arg(long, short)]
     docs: bool,
+
+    #[arg(long, short)]
+    crawl: bool,
 
     #[cfg(feature = "extra")]
     #[command(subcommand)]
@@ -84,6 +88,7 @@ fn cli() -> Result {
         mut update,
         mut fmt,
         mut docs,
+        crawl,
 
         #[cfg(feature = "extra")]
         command,
@@ -125,6 +130,10 @@ fn cli() -> Result {
             utils::fetch::clear_cache_dir()?;
         }
         info::fetch_info(&companies, &dir)?;
+    }
+
+    if crawl {
+        job_crawler::main()?;
     }
 
     if fmt {
