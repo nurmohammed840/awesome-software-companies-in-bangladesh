@@ -18,14 +18,7 @@
 use crate::Result;
 use chromiumoxide::{Browser, BrowserConfig};
 use futures::StreamExt;
-use ollama_rs::{
-    Ollama,
-    generation::{
-        chat::{ChatMessage, request::ChatMessageRequest},
-        parameters::{FormatType, KeepAlive},
-    },
-    models::ModelOptions,
-};
+use genai::chat::{ChatMessage, ChatOptions, ChatRequest, ChatResponseFormat};
 use url::Url;
 
 #[derive(Debug)]
@@ -198,6 +191,8 @@ pub async fn main() -> Result {
     Ok(())
 }
 
+// https://aistudio.google.com/api-keys
+
 async fn load_page(browser: &Browser, url: &str) -> Result {
     let page = browser.new_page(url).await?;
     let html = page.wait_for_navigation().await?.content().await?;
@@ -207,31 +202,24 @@ async fn load_page(browser: &Browser, url: &str) -> Result {
     let markdown = normalize_md(&html)?;
     log::info!("{url}: {markdown}");
 
-    let ollama = Ollama::default();
+    let client = genai::Client::default();
 
-    let request = ChatMessageRequest::new(
-        "qwen3:4b-instruct".into(),
-        vec![
-            ChatMessage::system(LLM_INPUT.to_string()),
-            ChatMessage::user(format!("Extract from this markdown.\n\n{markdown}")),
-        ],
-    )
-    .options(
-        ModelOptions::default()
-            .temperature(0.0)
-            .num_ctx(4096) // Limit context size
-            .num_predict(1024) // Hard limit on output tokens so the model doesn't loop
-            .top_k(20) // Reduces sampling compute space
-            .top_p(0.8),
-    )
-    // .keep_alive(KeepAlive::UnloadOnCompletion)
-    .think(false)
-    .format(FormatType::Json);
+    let options = ChatOptions::default()
+        .with_temperature(0.0)
+        // .with_max_tokens(2048)
+        .with_response_format(ChatResponseFormat::JsonMode);
 
-    log::info!("[LLM CALL]: {url}");
-    let response = ollama.send_chat_messages(request).await?;
+    let chat_req = ChatRequest::new(vec![
+        ChatMessage::system(LLM_INPUT.to_string()),
+        ChatMessage::user(format!("Extract from this markdown.\n\n{markdown}")),
+    ]);
 
-    log::info!("LLM Output:\n{}", response.message.content);
+    log::info!("[LLM-CALL]: {url}");
+    let response = client
+        .exec_chat("gemini-3.5-flash-lite", chat_req, Some(&options))
+        .await?;
+
+    log::info!("LLM Output:\n{}", response.texts().join("\n"));
 
     Ok(())
 }
